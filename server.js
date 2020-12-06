@@ -35,11 +35,10 @@ if(process.env.NODE_ENV=="production")
     const path=require('path') //path module
     app.get("*",(req,res)=>
     {
-        res.sendFile(path.resolve(__dirname,'./client/build/index.html')) //static file
+        res.sendFile(path.resolve(__dirname,'client','build','index.html')) //static file
         //if client will be making any req,then index.html will be sent for all cases.Index.html has all the react code
     })
 }
 
-"./"
 
 app.listen(PORT,()=>console.log('server is running on port',PORT))
