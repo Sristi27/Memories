@@ -2,13 +2,13 @@
   "name": "insta",
   "version": "1.0.0",
   "engines": {
-    "node": "12.x"
+    "node": "12.19.0"
   },
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install &&  npm run build"
   },
   "author": "",
   "license": "ISC",
