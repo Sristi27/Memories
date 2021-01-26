@@ -7,7 +7,8 @@ const mongoose=require('mongoose');
 
 const {MONGOURL} = require("./config/keys");
 
-mongoose.connect(MONGOURL,
+mongoose.connect(process.env.MONGODB_URI || 
+    "mongodb+srv://sristi:9SydKHQzKmfFSQJl@cluster0.9f1qo.mongodb.net/<dbname>?retryWrites=true&w=majority"
     {
         useNewUrlParser:true,
         useUnifiedTopology:true,
