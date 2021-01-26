@@ -65,8 +65,7 @@ export default function Login() {
            })
        })
        .then(res=>res.json())
-       .then(
-           data=>
+       .then(data=>
            {
                if(!data.error)
                {
@@ -81,8 +80,8 @@ export default function Login() {
                {
                     console.log(data.error)
                }
-           }
-           ).catch(err=>console.log(err))
+           })
+        .catch(err=>console.log(err.error))
        
    }
 }
