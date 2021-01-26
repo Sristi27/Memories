@@ -1,0 +1,21 @@
+a
+{
+ color:black;
+ text-decoration: none;
+}
+.App{
+text-transform: capitalize;
+}
+.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item
+{
+    width:259px;
+    height:250px;
+    margin-bottom: 20px;
+
+}

@@ -1,5 +1,5 @@
 module.exports =
 {
 	secret:process.env.JWT_SEC,
-	MONGOURL: process.env.MONGOURL
+	MONGOURL: process.env.MONGODB_URI  
 }
