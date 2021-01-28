@@ -1,8 +1,5 @@
-if(process.env.NODE_ENV=='production')
+module.exports=
 {
-	module.exports=require("./prod")
-}
-else
-{
-	module.exports=require('./dev')
+	secret:process.env.JWT_SEC || "eertyu",
+	MONGOURL: process.env.MONGODB_URI  ||  "mongodb+srv://sristi:9SydKHQzKmfFSQJl@cluster0.9f1qo.mongodb.net/<dbname>?retryWrites=true&w=majority"
 }
