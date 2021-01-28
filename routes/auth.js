@@ -44,7 +44,6 @@ router.post("/signin",(req,res)=>
                     	// res.json({})
                 	}
                 	else{
-                    	console.log(savedUser.password)
                     	return res.status(404).json({error:"Authentication Failed"})
                 	}
             	}
